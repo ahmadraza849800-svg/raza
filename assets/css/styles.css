@@ -1,0 +1,655 @@
+/* ==========================================================================
+   DAR UL ULOOM RIZVIA MASOOMIA — OFFICIAL STYLESHEET
+   Exclusively for Women | Classical Islamic Scholarship & Modern Education
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@500;600;700;800;900&family=Noto+Nastaliq+Urdu:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap');
+
+:root {
+  /* Color Palette */
+  --primary-emerald: #064E3B;
+  --primary-emerald-dark: #022C21;
+  --primary-emerald-deep: #011E16;
+  --primary-emerald-light: #0D7254;
+  --emerald-subtle: #ECFDF5;
+  --emerald-tint: #F2FBF7;
+
+  --gold-primary: #D4AF37;
+  --gold-light: #FDE68A;
+  --gold-lighter: #FFFBEB;
+  --gold-dark: #996515;
+  --gold-amber: #B45309;
+
+  --bg-sand: #FAF8F2;
+  --bg-cream: #FCFBF7;
+  --surface-white: #FFFFFF;
+  --surface-card: #FFFFFF;
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-emerald: #064E3B;
+
+  --border-gold: rgba(212, 175, 55, 0.35);
+  --border-subtle: rgba(6, 78, 59, 0.12);
+  --border-emerald: rgba(6, 78, 59, 0.25);
+
+  --shadow-sm: 0 2px 4px rgba(6, 78, 59, 0.05);
+  --shadow-md: 0 4px 12px rgba(6, 78, 59, 0.08);
+  --shadow-lg: 0 10px 25px -5px rgba(6, 78, 59, 0.12), 0 8px 10px -6px rgba(6, 78, 59, 0.06);
+  --shadow-gold: 0 8px 24px rgba(212, 175, 55, 0.25);
+  --shadow-emerald: 0 10px 30px rgba(6, 78, 59, 0.3);
+
+  /* Gradients */
+  --grad-gold: linear-gradient(135deg, #FDE68A 0%, #D4AF37 50%, #996515 100%);
+  --grad-emerald: linear-gradient(145deg, #095D40 0%, #064E3B 60%, #022C21 100%);
+  --grad-emerald-hero: linear-gradient(160deg, #064E3B 0%, #033628 50%, #011E16 100%);
+  --grad-soft-cream: linear-gradient(180deg, #FAF8F2 0%, #FFFFFF 100%);
+
+  /* Fonts */
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-display: 'Cinzel', serif;
+  --font-arabic: 'Amiri', 'Traditional Arabic', serif;
+  --font-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', 'Amiri', serif;
+
+  --transition-normal: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text-primary);
+  background-color: var(--bg-sand);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+/* Islamic Geometric Background Utility */
+.bg-islamic-pattern {
+  background-image: url('../images/pattern.svg');
+  background-repeat: repeat;
+}
+
+.bg-emerald-hero {
+  background: var(--grad-emerald-hero);
+  position: relative;
+}
+
+.bg-emerald-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/pattern.svg');
+  background-repeat: repeat;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+/* Typography Helpers */
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+  line-height: 1.9;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.gold-gradient-text {
+  background: var(--grad-gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Mihrab Arch Silhouette Class */
+.arch-card {
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.arch-header {
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+}
+
+/* 8-Point Star Badge (Rub el Hizb style) */
+.star-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  background: var(--primary-emerald);
+  color: var(--gold-primary);
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(6, 78, 59, 0.2);
+}
+
+.star-badge::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  transform: rotate(45deg);
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.star-badge > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Gold Frame Border */
+.gold-border-box {
+  border: 1px solid var(--border-gold);
+  background: var(--surface-card);
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.gold-border-box::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.gold-border-box:hover {
+  border-color: var(--gold-primary);
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+/* Top Notification / Info Strip */
+.top-bar {
+  background: var(--primary-emerald-dark);
+  color: #E2E8F0;
+  font-size: 0.825rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 7px 0;
+}
+
+.top-bar a {
+  color: #FDE68A;
+  text-decoration: none;
+  transition: var(--transition-normal);
+}
+
+.top-bar a:hover {
+  color: #FFFFFF;
+}
+
+/* Sticky Main Navigation */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(6, 78, 59, 0.1);
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-normal);
+}
+
+.nav-link {
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: #1E293B;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  position: relative;
+  transition: var(--transition-normal);
+  border-radius: 6px;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--primary-emerald);
+  background-color: var(--emerald-subtle);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18px;
+  height: 2.5px;
+  background: var(--gold-primary);
+  border-radius: 2px;
+}
+
+/* Buttons */
+.btn-gold {
+  background: var(--grad-gold);
+  color: #032C21;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid #D4AF37;
+  box-shadow: 0 4px 14px rgba(212, 175, 55, 0.35);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.45);
+  color: #011E16;
+}
+
+.btn-emerald {
+  background: var(--primary-emerald);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid var(--primary-emerald-light);
+  box-shadow: 0 4px 14px rgba(6, 78, 59, 0.25);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.btn-emerald:hover {
+  background: var(--primary-emerald-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(6, 78, 59, 0.35);
+  color: #FFFFFF;
+}
+
+.btn-outline-gold {
+  background: transparent;
+  color: #FDE68A;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1.5px solid #D4AF37;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(212, 175, 55, 0.15);
+  color: #FFFFFF;
+  border-color: #FDE68A;
+  transform: translateY(-2px);
+}
+
+.btn-outline-emerald {
+  background: transparent;
+  color: var(--primary-emerald);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1.5px solid var(--primary-emerald);
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.btn-outline-emerald:hover {
+  background: var(--emerald-subtle);
+  color: var(--primary-emerald-dark);
+  transform: translateY(-2px);
+}
+
+/* Feature Badge */
+.women-exclusive-tag {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(6, 78, 59, 0.12) 100%);
+  border: 1px solid #D4AF37;
+  color: var(--primary-emerald-dark);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Flagship Program Highlight Card */
+.flagship-card {
+  position: relative;
+  background: linear-gradient(145deg, #053D2E 0%, #032C21 100%);
+  color: #FFFFFF;
+  border: 2px solid var(--gold-primary);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(3, 44, 33, 0.35);
+}
+
+.flagship-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../images/pattern.svg');
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.year-step-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: var(--transition-smooth);
+}
+
+.year-step-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #FDE68A;
+  transform: translateY(-3px);
+}
+
+/* Faculty Card */
+.faculty-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid var(--border-gold);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+}
+
+.faculty-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(6, 78, 59, 0.15);
+  border-color: var(--gold-primary);
+}
+
+.faculty-avatar-frame {
+  width: 104px;
+  height: 104px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 4px;
+  background: var(--grad-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.faculty-avatar-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #032C21;
+  color: #FDE68A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  border: 2px solid #FFFFFF;
+}
+
+/* Courses Card */
+.course-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 1px solid rgba(6, 78, 59, 0.15);
+  box-shadow: var(--shadow-sm);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition-smooth);
+  position: relative;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.course-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Filter Tab Pills */
+.filter-tab {
+  padding: 0.6rem 1.4rem;
+  border-radius: 9999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: #FFFFFF;
+  border: 1px solid rgba(6, 78, 59, 0.2);
+  cursor: pointer;
+  transition: var(--transition-normal);
+}
+
+.filter-tab:hover {
+  color: var(--primary-emerald);
+  background: var(--emerald-subtle);
+  border-color: var(--primary-emerald);
+}
+
+.filter-tab.active {
+  background: var(--primary-emerald);
+  color: #FFFFFF;
+  border-color: var(--primary-emerald);
+  box-shadow: 0 4px 12px rgba(6, 78, 59, 0.25);
+}
+
+/* Modal styling */
+.custom-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(1, 30, 22, 0.7);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.custom-modal-overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.custom-modal-container {
+  background: #FFFFFF;
+  border-radius: 20px;
+  border: 2px solid var(--gold-primary);
+  max-width: 650px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.custom-modal-overlay.active .custom-modal-container {
+  transform: scale(1);
+}
+
+/* Print Slip Stylesheet */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printableSlip, #printableSlip * {
+    visibility: visible;
+  }
+  #printableSlip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-shadow: none;
+    border: 2px solid #064E3B !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #25D366;
+  color: #FFFFFF;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  text-decoration: none;
+  font-size: 28px;
+  transition: var(--transition-smooth);
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1EFEA;
+}
+::-webkit-scrollbar-thumb {
+  background: #064E3B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* FAQ Accordion Styling */
+.faq-item {
+  border: 1px solid rgba(6, 78, 59, 0.15);
+  background: #FFFFFF;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: var(--transition-normal);
+}
+
+.faq-item.active {
+  border-color: var(--gold-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.25rem 1.5rem;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-emerald-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out;
+  padding: 0 1.5rem;
+  color: var(--text-secondary);
+}
+
+.faq-item.active .faq-answer {
+  padding-bottom: 1.25rem;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .top-bar-details {
+    display: none;
+  }
+}

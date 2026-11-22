@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions 2026–2027 | Dar ul Uloom Rizvia Masoomia (Exclusively for Women)</title>
+  <meta name="description" content="Apply for admissions at Dar ul Uloom Rizvia Masoomia: 6-Year Dars-e-Nizami (for women only), Middle, Matric, F.A., and B.S. Islamic Studies. Fill online inquiry or download printable slip.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            emerald: { 850: '#044232', 900: '#064E3B', 950: '#022C21' },
+            amber: { 450: '#D4AF37', 550: '#B45309' }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            display: ['Cinzel', 'serif'],
+            arabic: ['Amiri', 'serif'],
+            urdu: ['Noto Nastaliq Urdu', 'Amiri', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#FAF8F2] text-slate-800 antialiased font-sans">
+
+  <!-- TOP INFO BAR -->
+  <aside aria-label="Quick contact and announcements" class="top-bar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">
+          <span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>
+          Admissions Open Session 2026–2027 • برائے طالبات
+        </span>
+        <span class="hidden md:inline text-emerald-200 text-xs">| Flagship 6-Year Dars-e-Nizami &amp; Contemporary Degrees</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium top-bar-details">
+        <a href="tel:03335861005" class="flex items-center gap-1.5 hover:text-white transition">
+          <span>Principal: <strong class="font-mono text-amber-200">03335861005</strong></span>
+        </a>
+        <span class="text-emerald-700">|</span>
+        <a href="tel:03078498008" class="flex items-center gap-1.5 hover:text-white transition">
+          <span>Vice Principal: <strong class="font-mono text-amber-200">03078498008</strong></span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- NAVIGATION -->
+  <header class="main-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-amber-400 shadow-md group-hover:scale-105 transition-transform">
+            <img src="assets/images/logo.svg" alt="Dar ul Uloom Rizvia Masoomia Logo" class="w-full h-full object-cover">
+          </div>
+          <div class="flex flex-col">
+            <span class="font-display font-bold text-lg sm:text-xl text-emerald-950 tracking-wider">DAR UL ULOOM RIZVIA MASOOMIA</span>
+            <span class="font-urdu text-xs sm:text-sm font-bold text-amber-700">دار العلوم رضویہ معصومیہ (برائے طالبات)</span>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="courses.html" class="nav-link">Courses &amp; Dars-e-Nizami</a>
+          <a href="faculty.html" class="nav-link">Leadership &amp; Faculty</a>
+          <a href="admissions.html" class="nav-link active">Admissions</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="#inquiry-form-section" class="btn-gold text-xs uppercase tracking-wider py-2.5 px-5">
+            Apply Now
+          </a>
+          <button id="mobileMenuToggle" type="button" aria-label="Open mobile navigation menu" class="lg:hidden p-2 rounded-lg text-emerald-950 hover:bg-emerald-50">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobileMenuBackdrop" class="fixed inset-0 bg-emerald-950/60 backdrop-blur-sm z-40 hidden"></div>
+  <aside id="mobileMenu" aria-label="Mobile navigation menu" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85vw] bg-white z-50 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    <div class="p-5 border-b border-slate-100 flex items-center justify-between bg-emerald-950 text-white">
+      <span class="font-display font-bold text-sm tracking-wider text-amber-200">NAVIGATION</span>
+      <button id="mobileMenuClose" type="button" aria-label="Close mobile navigation menu" class="p-1 rounded text-emerald-200 hover:text-white">✕</button>
+    </div>
+    <nav class="p-5 space-y-2 flex-1 overflow-y-auto">
+      <a href="index.html" class="mobile-nav-link block px-4 py-2 text-emerald-950 font-semibold hover:bg-emerald-50 rounded">Home</a>
+      <a href="about.html" class="mobile-nav-link block px-4 py-2 text-emerald-950 font-semibold hover:bg-emerald-50 rounded">About Us</a>
+      <a href="courses.html" class="mobile-nav-link block px-4 py-2 text-emerald-950 font-semibold hover:bg-emerald-50 rounded">Courses &amp; Dars-e-Nizami</a>
+      <a href="faculty.html" class="mobile-nav-link block px-4 py-2 text-emerald-950 font-semibold hover:bg-emerald-50 rounded">Leadership &amp; Faculty</a>
+      <a href="admissions.html" class="mobile-nav-link block px-4 py-2 text-emerald-950 font-semibold bg-emerald-50 rounded">Admissions</a>
+      <a href="contact.html" class="mobile-nav-link block px-4 py-2 text-emerald-950 font-semibold hover:bg-emerald-50 rounded">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- BANNER -->
+  <section class="bg-emerald-hero text-white py-16 lg:py-20 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <span class="inline-block px-3 py-1 bg-amber-400/20 text-amber-300 text-xs font-bold rounded-full border border-amber-400/30 mb-3">
+        Session 2026–2027 Admissions Open • برائے طالبات
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-serif font-black tracking-tight mb-3">
+        Admissions Portal &amp; Registration
+      </h1>
+      <p class="font-urdu text-xl sm:text-2xl text-amber-300 font-bold mb-4">
+        داخلہ برائے سال ۲۰۲۶ تا ۲۰۲۷
+      </p>
+      <p class="text-sm sm:text-base text-emerald-100 max-w-2xl mx-auto">
+        Offering a dignified, safe, and academically rigorous learning environment exclusively for female students.
+      </p>
+    </div>
+  </section>
+
+  <!-- ADMISSIONS CONTENT -->
+  <main class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Criteria & Required Docs -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <span class="text-xs font-bold text-amber-800 uppercase tracking-widest block mb-2">Checklist</span>
+          <h3 class="text-lg font-serif font-bold text-emerald-950 mb-3">Required Documents</h3>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li>• Student B-Form / CNIC copy</li>
+            <li>• Father / Guardian CNIC copy</li>
+            <li>• 4 Passport-size photographs (in modest scarf)</li>
+            <li>• Previous school / madrasah marksheet / certificate</li>
+            <li>• Character certificate from previous institution</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <span class="text-xs font-bold text-amber-800 uppercase tracking-widest block mb-2">Policy</span>
+          <h3 class="text-lg font-serif font-bold text-emerald-950 mb-3">Affordable Fees &amp; Aid</h3>
+          <ul class="text-xs text-slate-600 space-y-2">
+            <li>• Subsidized monthly tuition structure</li>
+            <li>• Generous scholarships for orphans (Yateem)</li>
+            <li>• Merit concessions for Hafizah students</li>
+            <li>• Financial assistance for needy families</li>
+            <li>• Free course books assistance for deserving students</li>
+          </ul>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-emerald-950 text-white border border-amber-400">
+          <span class="text-xs font-bold text-amber-300 uppercase tracking-widest block mb-2">Office Contacts</span>
+          <h3 class="text-lg font-serif font-bold text-white mb-3">Direct Inquiries</h3>
+          <div class="text-xs text-emerald-100 space-y-3">
+            <div>
+              <span class="text-slate-300 block">Principal:</span>
+              <span class="font-bold text-white">Sufi Jamshaid Alam</span>
+              <a href="tel:03335861005" class="font-mono font-bold text-amber-300 block">03335861005</a>
+            </div>
+            <div class="pt-2 border-t border-emerald-900">
+              <span class="text-slate-300 block">Vice Principal:</span>
+              <span class="font-bold text-white">Allama Ahmad Raza Khan</span>
+              <a href="tel:03078498008" class="font-mono font-bold text-amber-300 block">03078498008</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE APPLICATION FORM -->
+      <section id="inquiry-form-section" class="max-w-3xl mx-auto bg-[#FAF8F2] p-8 sm:p-10 rounded-3xl border-2 border-emerald-900/20 shadow-lg">
+        <div class="text-center mb-8">
+          <span class="text-xs font-bold text-amber-700 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+            Official Online Form
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-serif font-bold text-emerald-950 mt-2">
+            Submit Admission Inquiry
+          </h2>
+          <p class="text-xs text-slate-600 mt-1">
+            An official printable acknowledgment slip with an Inquiry Tracking Number will be generated instantly.
+          </p>
+        </div>
+
+        <form id="admissionInquiryForm" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="studentName" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">
+                Student Full Name *
+              </label>
+              <input type="text" id="studentName" required placeholder="e.g. Zainab Bibi" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 outline-none transition bg-white">
+            </div>
+
+            <div>
+              <label for="guardianName" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">
+                Father / Guardian Name *
+              </label>
+              <input type="text" id="guardianName" required placeholder="e.g. Muhammad Akram" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 outline-none transition bg-white">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="contactNumber" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">
+                Primary Phone Number *
+              </label>
+              <input type="tel" id="contactNumber" required placeholder="e.g. 03001234567" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 outline-none transition bg-white">
+            </div>
+
+            <div>
+              <label for="whatsappNumber" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">
+                WhatsApp Number
+              </label>
+              <input type="tel" id="whatsappNumber" placeholder="e.g. 03001234567" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 outline-none transition bg-white">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label for="selectedCourse" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">
+                Program of Interest *
+              </label>
+              <select id="selectedCourse" required class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 outline-none transition bg-white">
+                <option value="6-Year Dars-e-Nizami (Alimah Program)">6-Year Dars-e-Nizami (Flagship Alimah Course)</option>
+                <option value="Middle (Grade 6 to 8)">Middle Section (Grades 6 to 8)</option>
+                <option value="Matric (Science Group)">Matric (Science Group)</option>
+                <option value="Matric (Arts Group)">Matric (Arts Group)</option>
+                <option value="F.A. (Faculty of Arts)">F.A. (Faculty of Arts / Humanities)</option>
+                <option value="B.S. Islamic Studies (4 Years)">B.S. Islamic Studies (4-Year Degree)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="previousQualification" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">
+                Previous Education *
+              </label>
+              <input type="text" id="previousQualification" required placeholder="e.g. Primary / Middle / Matric" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 outline-none transition bg-white">
+            </div>
+          </div>
+
+          <div>
+            <label for="residentialStatus" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">
+              Attendance Preference
+            </label>
+            <select id="residentialStatus" class="w-full text-xs px-3.5 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 outline-none transition bg-white">
+              <option value="Day Scholar">Day Scholar (Daily Commute)</option>
+              <option value="Hostel Resident">Hostel Accommodation Required</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="additionalNotes" class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">
+              Questions or Specific Requests
+            </label>
+            <textarea id="additionalNotes" rows="3" placeholder="Timing, fee concession request, or any other query..." class="w-full text-xs px-3.5 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-emerald-700 outline-none transition bg-white"></textarea>
+          </div>
+
+          <div class="pt-3">
+            <button type="submit" class="btn-gold w-full text-sm py-3 font-bold uppercase tracking-wider">
+              Submit &amp; Print Acknowledgment Slip
+            </button>
+          </div>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ADMISSION SLIP MODAL -->
+  <div id="admissionSlipModal" class="custom-modal-overlay">
+    <div class="custom-modal-container max-w-2xl">
+      <div class="p-4 bg-emerald-950 text-white flex items-center justify-between rounded-t-2xl no-print">
+        <span class="font-bold text-sm text-amber-200">Inquiry Slip Generated</span>
+        <div class="flex items-center gap-2">
+          <button id="printSlipButton" type="button" class="btn-gold text-xs py-1.5 px-3">
+            🖨️ Print / Save PDF
+          </button>
+          <button id="closeSlipModal" type="button" class="text-slate-300 hover:text-white p-1">✕</button>
+        </div>
+      </div>
+      <div id="printableSlip" class="p-6"></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-emerald-950 text-white pt-12 pb-8 border-t-2 border-amber-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-emerald-300/80">
+      <div>
+        <p class="text-amber-200 font-bold">Dar ul Uloom Rizvia Masoomia (Exclusively for Women)</p>
+        <p>Principal Sufi Jamshaid Alam (03335861005) • Vice Principal Allama Ahmad Raza Khan (03078498008)</p>
+      </div>
+      <p>&copy; 2026 All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

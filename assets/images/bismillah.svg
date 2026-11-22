@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bismillahGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Islamic Flourish Ends -->
+  <g stroke="url(#bismillahGold)" stroke-width="1.5" fill="none" opacity="0.8">
+    <path d="M 20 60 C 50 40, 70 80, 100 60 L 130 60" />
+    <circle cx="20" cy="60" r="3" fill="#D4AF37" />
+    <polygon points="120,56 126,60 120,64 122,60" fill="#D4AF37" />
+
+    <path d="M 580 60 C 550 40, 530 80, 500 60 L 470 60" />
+    <circle cx="580" cy="60" r="3" fill="#D4AF37" />
+    <polygon points="480,56 474,60 480,64 478,60" fill="#D4AF37" />
+  </g>
+
+  <!-- Arabic Calligraphy Text Rendering -->
+  <text x="300" y="75" text-anchor="middle" font-family="'Amiri', 'Traditional Arabic', 'Scheherazade New', serif" font-size="44" font-weight="bold" fill="url(#bismillahGold)" filter="url(#subtleGlow)" letter-spacing="1.5">
+    بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ
+  </text>
+
+  <!-- Small Rub el Hizb accents -->
+  <g transform="translate(145, 54) scale(0.6)" fill="none" stroke="#D4AF37" stroke-width="1.5">
+    <rect x="-10" y="-10" width="20" height="20" />
+    <rect x="-10" y="-10" width="20" height="20" transform="rotate(45)" />
+    <circle cx="0" cy="0" r="3" fill="#D4AF37" />
+  </g>
+  <g transform="translate(455, 54) scale(0.6)" fill="none" stroke="#D4AF37" stroke-width="1.5">
+    <rect x="-10" y="-10" width="20" height="20" />
+    <rect x="-10" y="-10" width="20" height="20" transform="rotate(45)" />
+    <circle cx="0" cy="0" r="3" fill="#D4AF37" />
+  </g>
+</svg>
